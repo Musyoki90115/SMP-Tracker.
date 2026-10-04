@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 \# SMP Tracker
@@ -26,3 +27,7 @@ A beginner Python project for recording daily wellness check-ins.
 
 3\. Run `python tracker.py`.
 
+=======
+# SMP-Tracker.
+A python daily wellness check-in tracker
+>>>>>>> 3ccd7b01446479b85f5a9e81afc189668916823f

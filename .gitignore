@@ -1,25 +1,50 @@
-
 # Python
-__pycache__/
+
+**pycache**/
 *.pyc
 *.pyo
 
 # Environment variables
+
 .env
 .env.local
 
 # Virtual environments
+
 venv/
 .venv/
 
 # Sensitive data
+
 secrets.json
 
+# CSV data files
+
+*.csv
+
 # OS files
+
 .DS_Store
 Thumbs.db
 
 # VS Code settings
-.vscode/
 
 .vscode/
+
+# Build and Release Folders
+
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+
+.settings/
+
+# Executables
+
+*.swf
+*.air
+*.ipa
+*.apk
