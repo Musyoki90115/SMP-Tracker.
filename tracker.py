@@ -7,6 +7,7 @@ def daily_checkin():
 
     name = input("Enter your name: ")
     sleep = float(input("Hours of sleep: "))
+
     water = int(input("Glasses of water: "))
     steps = int(input("Number of steps: "))
 
