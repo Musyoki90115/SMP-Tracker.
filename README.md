@@ -1,36 +1,38 @@
+# SMP Tracker
 
+A daily performance tracker for the Self-Made Protocol (SMP) fitness program.
+Logs sleep, water intake, and step count. Predicts goal achievement using a
+trained Random Forest classifier and generates a coaching message.
 
+## What It Does
 
-\# SMP Tracker
+- Accepts daily check-in data (sleep hours, water glasses, steps)
+- Predicts whether the 10,000-step goal will be hit
+- Returns a confidence score and a direct coaching message
+- Exports a weekly summary report as JSON
 
+## Setup
 
+```bash
+pip install -r requirements.txt
+```
 
-A beginner Python project for recording daily wellness check-ins.
+## Usage
 
+```python
+from tracker import analyze_day
 
+result = analyze_day(sleep_hr=7.5, water_glasses=9, bench_kg=88)
+print(result["coaching"])
+```
 
-\## Features
+## Sample Output
 
-\- Records sleep, water intake, and daily steps.
+```
+Prediction: HIT GOAL (88% confidence)
+Coach: Strong inputs, strong output. Baseline is locked in. Keep this pattern consistent.
+```
 
-\- Checks whether the daily step goal of 10,000 is achieved.
+## Stack
 
-\- Displays a daily report in the terminal.
-
-
-
-\## How to Run
-
-1\. Install Python.
-
-2\. Open PowerShell in the project folder.
-
-3\. Run `python tracker.py`.
-
-=======
-# SMP-Tracker.
-A python daily wellness check-in tracker
->>>>>>> 3ccd7b01446479b85f5a9e81afc189668916823f
-## Pull Request Practice
-
-This section was added while practicing the GitHub pull request workflow.
+Python, scikit-learn, pandas, FastAPI
