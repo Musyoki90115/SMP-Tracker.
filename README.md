@@ -31,3 +31,6 @@ A beginner Python project for recording daily wellness check-ins.
 # SMP-Tracker.
 A python daily wellness check-in tracker
 >>>>>>> 3ccd7b01446479b85f5a9e81afc189668916823f
+## Pull Request Practice
+
+This section was added while practicing the GitHub pull request workflow.
